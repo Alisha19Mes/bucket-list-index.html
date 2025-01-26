@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffdde1, #ff9a9e);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 192, 203, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid #ffd1e3;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+    color: #ff69b4;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5rem;
+    color: #ffe6f1;
+    margin-top: 10px;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.list-container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 182, 193, 0.5);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 182, 193, 0.7);
+}
+
+/* Bucket List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    background: linear-gradient(135deg, #ffe4e9, #ffc1e3);
+    color: #ff1493;
+    margin: 1.2rem 0;
+    padding: 1.5rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background: linear-gradient(135deg, #ffc1e3, #ff9abb);
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+ul li .icon {
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover .icon {
+    transform: rotate(360deg);
+}
+
+/* Completed Items */
+.completed {
+    text-decoration: line-through;
+    color: #d27ca7;
+    background: rgba(255, 240, 245, 0.7);
+}
+
+.completed .icon {
+    color: #d62976;
+    transform: scale(1.2);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 105, 180, 0.4);
+    border-top: 3px solid #ff9abb;
+    color: #ffe4e9;
+    font-size: 1.2rem;
+    font-family: 'Pacifico', cursive;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
